@@ -1,12 +1,28 @@
 ﻿
+<nav class="navbar navbar-dark bg-primary">
 
 
 
+    <div class="container-fluid">
 
+
+
+        <span class="ref" style="font-size:15px;font-family: sans-serif;position: fixed;right: 100px;top: 19px;">User: Gokul</span>
+
+        <button class="btn1" routerLink="/login" routerLinkActive="active"><i class='fas fa-user-circle'
+          style='color: white;position: fixed;right: 75px;top: 20px;'></i></button>
+
+
+
+        <!-- <button class="btn"   routerLink="/home" routerLinkActive="active"><i class="material-icons"
+          style="color: white;position: fixed;right: 25px;top: 15px;">logout</i></button> -->
+        <!-- *ngIf="_authService.loggedIn()" (click)="_authService.logoutUser()"  -->
+    </div>
+</nav>
 
 
 <div class="card mt-4">
-    <h4 class="card-header">You're logged in with Angular 8 & JWT!!</h4>
+    <h4 class="card-header">You're logged in!</h4>
     <div class="card-body">
         <h6>Users from secure api end point</h6>
         <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>

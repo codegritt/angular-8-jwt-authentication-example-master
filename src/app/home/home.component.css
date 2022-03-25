@@ -84,6 +84,16 @@ th.mat-sort-header-sorted {
 
   
 @media all and (max-width:500px){
+
+  .ref{
+      
+    position: fixed;
+   padding-top: 15px;
+   margin-right: 95px;
+   visibility: hidden;
+
+   
+  }
    
     
 .mat-table{
