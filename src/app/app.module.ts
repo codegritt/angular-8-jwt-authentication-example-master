@@ -2,6 +2,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import{ BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 // used to create fake backend
 import { fakeBackendProvider } from './_helpers';
@@ -28,6 +29,7 @@ import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         ReactiveFormsModule,
         HttpClientModule,
         appRoutingModule,
