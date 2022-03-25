@@ -5,9 +5,13 @@
 .ref{
   font-size:15px;
   font-family: sans-serif;
-  right: 100px;
-  top: 50px;
+ position: fixed;
+ text-align: end;
+ justify-content: end;
+top: 20px;
+
   color: #fff;
+
 }
 
 md-icon{
