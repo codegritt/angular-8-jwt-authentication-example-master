@@ -1,4 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+
+md-icon{
+  font-family: 'Material Icons' !important;
+}
+
+.mat-elevation-z8{
+  padding-top: 20px;
+}
+
+
+.mat-table{
+  width: 55%; 
+  margin-left: auto; 
+    margin-right: auto;
+    border-collapse: collapse;
+    border:  solid 2px navy;
+    text-align:center;
+  display: block;
+  justify-content: center;
+}
+
+
+
+
+.mat-header-cell {
+  background-color: navy;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+ 
+  
+}
+
+.mat-cell{
+ 
+   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: navy;
+  font-size: 1em;
+  text-align:start;
+  display: block;
+  justify-content: start;
+} 
+
+
+th.mat-sort-header-sorted {
+  color: #fff;
+}
+
+
+
+.mat-paginator{
+  width: 55%; 
+  margin-left: auto; 
+  margin-right: auto;
+  color: navy;
+}
+
+.span1{
+  color:navy;
+  font-weight: 600;
+  position: relative;
+  left: 303px;
+  bottom: 10px;
+
+}
+
+.filter{
+  /* box-shadow: 0 0px 20px rgba(0,0,0,0.05), 0 0px 20px rgba(0,0,0,0.23); */
+  position: relative;
+  left: 305px;
+  bottom: 10px;
+  width: 12.5%;
+  height: 30px;
+}
 
 
 
@@ -34,6 +114,99 @@
   
      
     }
+
+
+    
+.mat-table{
+  width: 95%; 
+  margin-left: auto; 
+    margin-right: auto;
+    border-collapse: collapse;
+    border:  solid 2px navy;
+    /* text-align:center;
+  display: block;
+  justify-content: center; */
+}
+
+.mat-column-position {
+  width: 20px;
+position: relative;
+height: 20px;
+  padding-right: 30px;
+  padding-left:5px;
+  text-align: center;
+  
+}
+
+.mat-column-symbol {
+
+  
+  padding-left:10px;
+  padding-right: 10px;
+  
+}
+
+.mat-header-cell {
+  background-color: navy;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+ 
+  
+}
+
+
+.mat-cell{
+ 
+   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: navy;
+  font-size: 0.8em;
+  text-align:start;
+  display: block;
+  justify-content: start;
+  height: 50px;
+} 
+
+
+    
+    .mat-paginator{
+      width: 100%; 
+     position: relative;
+      color: navy;
+    right: 40px;
+    }
+
+    
+.span1{
+  color:navy;
+  font-weight: 600;
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+}
+.filter{
+ 
+  position: relative;
+  left: 15px;
+  bottom: 10px;
+  width: 30%;
+  height: 30px;
+}
+
+.mat-elevation-z8{
+  padding-top: 20px;
+}
+
+.mat-icon {
+ position: relative;
+  font-size: 20px;
+  right: 20px;
+  width: 10%;
+  bottom: 10px;
+margin-right: -20px;
+}
 }  
 
 

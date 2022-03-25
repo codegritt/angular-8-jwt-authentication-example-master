@@ -16,3 +16,69 @@
     </div>
 </div>
 
+
+<div class="mat-elevation-z8">
+    <span class="span1">Search</span>
+    <mat-form-field class="filter" >
+    
+    <input (keyup)="applyFilter($event.target.value)" matInput placeholder="">
+    
+    </mat-form-field>
+  
+   
+  
+      <mat-table [dataSource]="dataSource"  class="table table-bordered" matSort  >
+        <!-- Position Column -->
+        <ng-container  matColumnDef="position"  >
+          <mat-header-cell    *matHeaderCellDef  mat-sort-header> Employee ID </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef mat-sort-header > Name </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+        </ng-container>
+  
+        <!-- Weight Column -->
+        <ng-container matColumnDef="weight">
+          <mat-header-cell   *matHeaderCellDef mat-sort-header > Email </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="symbol">
+          <mat-header-cell  *matHeaderCellDef  >Actions </mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            
+  
+            <button  matTooltip="Add User" style=" border-color: transparent; font-size:26px;color: #5cb85c;" mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+              <mat-icon>add_box</mat-icon>
+            </button>&nbsp;&nbsp;
+    
+    
+            <button  matTooltip="Edit User" style=' border-color: transparent;font-size:26px;color: #f0ad4e;' mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+              <mat-icon>edit</mat-icon>
+            </button>&nbsp;&nbsp;
+    
+    
+            <button  matTooltip="Delete User" style=" border-color: transparent;font-size:26px;color:#d9534f" mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </mat-cell>
+        </ng-container>
+  
+      
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row  *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+  
+      <mat-paginator  class="paginator" [length]="20" [pageSize]="5" [pageSizeOptions]="[5,10,20]"  aria-label="Select page" showFirstLastButtons >
+  
+  
+      </mat-paginator>
+     
+  
+    </div>
+  
+    
