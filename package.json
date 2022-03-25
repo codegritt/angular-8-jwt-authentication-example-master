@@ -12,6 +12,7 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
+    "@angular-devkit/schematics": "^13.3.0",
     "@angular/animations": "~8.0.1",
     "@angular/cdk": "~8.2.3",
     "@angular/common": "~8.0.1",
