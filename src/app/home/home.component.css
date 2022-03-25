@@ -8,25 +8,24 @@
  position: fixed;
  text-align: end;
  justify-content: end;
-top: 20px;
+top: 18px;
+left: 1160px;
+color: #fff;
 
-  color: #fff;
 
 }
 
-/* .btn1{
-  color: white;
-  position: fixed;
-  right: 75px;
-  top: 20px;
-} */
 
-.fas-fa-user-circle{
-  color: white;
+.btn1{
+ color: white;
   position: fixed;
   right: 75px;
-  top: 20px;
-}
+  top: 15px;
+  border: transparent;
+  background-color: navy;
+} 
+
+
 
 md-icon{
   font-family: 'Material Icons' !important;
@@ -204,11 +203,12 @@ height: 20px;
 
 .mat-icon {
  position: relative;
-  font-size: 20px;
+  font-size: 15px;
   right: 20px;
   width: 10%;
   bottom: 10px;
 margin-right: -20px;
+margin-left: -10px;
 }
 }  
 
