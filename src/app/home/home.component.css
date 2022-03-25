@@ -14,7 +14,14 @@ top: 20px;
 
 }
 
-.btn1{
+/* .btn1{
+  color: white;
+  position: fixed;
+  right: 75px;
+  top: 20px;
+} */
+
+.fas-fa-user-circle{
   color: white;
   position: fixed;
   right: 75px;
